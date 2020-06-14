@@ -1,4 +1,4 @@
-export const STYLES_MAP = [
+export const STYLES_MAP_DARK = [
   {
     "elementType": "geometry",
     "stylers": [
@@ -24,15 +24,6 @@ export const STYLES_MAP = [
     ]
   },
   {
-    "featureType": "administrative.land_parcel",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "featureType": "administrative.locality",
     "elementType": "labels.text.fill",
     "stylers": [
@@ -51,28 +42,11 @@ export const STYLES_MAP = [
     ]
   },
   {
-    "featureType": "poi.business",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "featureType": "poi.park",
     "elementType": "geometry",
     "stylers": [
       {
         "color": "#263c3f"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -113,15 +87,6 @@ export const STYLES_MAP = [
     ]
   },
   {
-    "featureType": "road.arterial",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
     "featureType": "road.highway",
     "elementType": "geometry",
     "stylers": [
@@ -141,36 +106,10 @@ export const STYLES_MAP = [
   },
   {
     "featureType": "road.highway",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
     "elementType": "labels.text.fill",
     "stylers": [
       {
         "color": "#f3d19c"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "labels",
-    "stylers": [
-      {
-        "visibility": "off"
       }
     ]
   },
@@ -219,4 +158,4 @@ export const STYLES_MAP = [
       }
     ]
   }
-]
+];

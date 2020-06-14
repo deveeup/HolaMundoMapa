@@ -5,7 +5,7 @@ import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import Layout from '../../components/layout';
 import Modal from './modal';
 import icon from './icon.svg'
-import { STYLES_MAP } from './mapStyle';
+import { STYLES_MAP_DARK } from './mapStyle';
 import './styles.scss';
 
 const Maps = props => {
@@ -36,7 +36,7 @@ const Maps = props => {
   }
   const _mapLoaded = (mapProps, map) => {
     map.setOptions({
-       styles: STYLES_MAP
+       styles: STYLES_MAP_DARK 
     });
   };
   const onMarkerClick = (props, marker) => {
@@ -89,5 +89,5 @@ const Maps = props => {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBERa9loc2xvkdYN0ndMMyuwq9FE3Ij1tc',
+  apiKey: process.env.REACT_APP_URL_API_KEY,
 })(Maps);

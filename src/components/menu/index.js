@@ -10,9 +10,6 @@ const Menu = () => {
           <Link to ="/">Inicio</Link>
         </li>
         <li>
-          <a href="#">Modo oscuro</a>
-        </li>
-        <li>
           <Link to ="/places">Lugares guardados</Link>
         </li>
       </ul>

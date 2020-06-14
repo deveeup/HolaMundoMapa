@@ -1,12 +1,11 @@
 const initialState = {
   modal: false,
-  darkMode: false,
   places: [],
   home: {
     lat: 4.75374,
     lng: -74.09174,
   },
-  app: 'mapita',
+  app: process.env.REACT_APP_URL_NAME_APP,
 
 };
 export default function (state = initialState, action) {
