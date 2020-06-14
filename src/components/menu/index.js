@@ -7,8 +7,7 @@ const Menu = () => {
     <div className="Menu">
       <ul>
         <li>
-        <Link to ="/home">Inicio</Link>
-
+          <Link to ="/">Inicio</Link>
         </li>
         <li>
           <a href="#">Modo oscuro</a>

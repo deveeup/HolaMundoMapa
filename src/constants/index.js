@@ -1,4 +1,4 @@
 export const PathRoutes = {
-  MAIN: '/home',
+  MAIN: '/',
   PLACES: '/places'
 };

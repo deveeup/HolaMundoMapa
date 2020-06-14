@@ -10,8 +10,8 @@ const App = () => {
   return (
     <HashRouter>
       <Switch>
-        <Route path={PathRoutes.MAIN} component={Home} />
-        <Route path={PathRoutes.PLACES} component={Places} />
+        <Route path={PathRoutes.MAIN} component={Home} exact />
+        <Route path={PathRoutes.PLACES} component={Places} exact/>
         <Route component={NoFound} />
       </Switch>
     </HashRouter>

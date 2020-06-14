@@ -7,7 +7,7 @@
   position: absolute;
   top: 70px;
   bottom: 70px;
-  animation: mymove .5s;
+  animation: menuAnimation .5s;
   right: 0;
   ul {
     padding: 0;
@@ -28,7 +28,7 @@
     }
   }
 }
-@keyframes mymove {
+@keyframes menuAnimation {
   from {
     top: 70px;
     bottom: 70px;
