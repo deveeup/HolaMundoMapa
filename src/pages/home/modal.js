@@ -17,6 +17,7 @@ const Modal = ({ currentPlace }) => {
       places: [
         ...info.places,
         {
+          id: currentPlace.lat-currentPlace.lng,
           name: namePlace,
           lat: currentPlace.lat,
           lng: currentPlace.lng

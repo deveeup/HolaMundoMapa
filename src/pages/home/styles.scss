@@ -71,6 +71,12 @@
     }
   }
 }
+.popup {
+  padding: 5px;
+  &-text {
+    font-weight: bold;
+  }
+}
 @keyframes modalAnimation {
   from {
     opacity: 0;
