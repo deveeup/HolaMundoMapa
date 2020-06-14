@@ -1,10 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const Menu = () => {
   return (
     <div className="Menu">
-      <h1>OLAAA</h1>
+      <ul>
+        <li>
+        <Link to ="/home">Inicio</Link>
+
+        </li>
+        <li>
+          <a href="#">Modo oscuro</a>
+        </li>
+        <li>
+          <Link to ="/places">Lugares guardados</Link>
+        </li>
+      </ul>
     </div>
   );
 };
