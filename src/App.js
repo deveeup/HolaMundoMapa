@@ -1,15 +1,18 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
+import { PathRoutes } from './constants';
 import Home from './pages/home';
 import Places from './pages/places';
+import NoFound from './pages/noFound';
 import './assets/styles/normalize.css';
 
 const App = () => {
   return (
     <HashRouter>
       <Switch>
-        <Route path='/home' component={Home} />
-        <Route path='/places' component={Places} />
+        <Route path={PathRoutes.MAIN} component={Home} />
+        <Route path={PathRoutes.PLACES} component={Places} />
+        <Route component={NoFound} />
       </Switch>
     </HashRouter>
       
