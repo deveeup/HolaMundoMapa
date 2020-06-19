@@ -6,7 +6,7 @@ const initialState = {
     lng: -74.09174,
   },
   app: process.env.REACT_APP_URL_NAME_APP,
-
+  langEN: false
 };
 export default function (state = initialState, action) {
   switch (action.type) {

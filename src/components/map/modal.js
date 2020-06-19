@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addDataUser } from '../../actions/user';
+import { ES_TEXTS, EN_TEXTS } from '../../constants';
 
 const Modal = ({ currentPlace }) => {
   const [ namePlace, setNamePlace ] = useState('');
@@ -10,7 +11,8 @@ const Modal = ({ currentPlace }) => {
     userData => dispatch(addDataUser(userData)),
     [dispatch]
   );
-
+  const ES = ES_TEXTS;
+  const EN = EN_TEXTS;
   const addPlace = () => {
     addUserData({
       ...info,
@@ -38,10 +40,10 @@ const Modal = ({ currentPlace }) => {
   return (
     <div className="ModalContainer">
       <div className="ModalContainer-box">
-        <p>¿Cómo se llama este lugar?</p>
+        <p>{info.langEN ? EN.howNamePlace : ES.howNamePlace}</p>
         <input 
           type="text"
-          placeholder="Hogar"
+          placeholder={info.langEN ? EN.placePlaceholder : ES.placePlaceholder}
           onChange={(e) => setNamePlace(e.target.value)}
         />
         <div>
@@ -49,13 +51,13 @@ const Modal = ({ currentPlace }) => {
             className="ModalContainer-box-confirm"
             onClick={addPlace}
           >
-            Agregar
+            {info.langEN ? EN.actionButton : ES.actionButton}
           </button>
           <button 
             className="ModalContainer-box-cancel"
             onClick={cancel}
           >
-            Cancelar
+            {info.langEN ? EN.cancelButton : ES.cancelButton}
           </button>
         </div>
       </div>
