@@ -1,0 +1,41 @@
+@import '../../assets/styles/vars.scss';
+
+.Container {
+  min-height: calc(100vh - 140px);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $purple;
+  flex-direction: column;
+  img {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    color: white;
+    max-width: 400px;
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+  }
+  a {
+    background-color: $green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    will-change: transform;
+    transition: .5s;
+    &:active {
+      transform: scale(.9);
+    }
+  }
+  @media(min-width: 900px) {
+    img {
+      width: 30%;
+    }
+  }
+}

@@ -16,7 +16,9 @@ export const ES_TEXTS = {
   placePlaceholder: 'Hogar',
   actionButton: 'Agregar',
   cancelButton: 'Cancelar',
-  alt: 'mapita'
+  alt: 'mapita',
+  notFound: '¡Ups! No hemos encontrado lo que estás buscando',
+  backHome: 'Ir al inicio'
 };
 
 export const EN_TEXTS = {
@@ -32,5 +34,7 @@ export const EN_TEXTS = {
   placePlaceholder: 'My home',
   actionButton: 'Add',
   cancelButton: 'Cancel',
-  alt: 'mapita'
+  alt: 'mapita',
+  notFound: 'What you are looking for does not exist',
+  backHome: 'Go home'
 };
