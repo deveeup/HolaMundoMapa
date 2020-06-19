@@ -18,7 +18,7 @@ Para correr la aplicación en modo local utilice el siguiente comando
 ```
 npm run build:local
 ```
-Para utilizar la aplicación desde un navegador acceda al siguiente enlace: [https://google.com](https://google.com)
+Para utilizar la aplicación desde un navegador acceda al siguiente enlace: [https://deveeup.github.io/HolaMundoMapa/](https://deveeup.github.io/HolaMundoMapa/)
 
 
 ## Licencia
