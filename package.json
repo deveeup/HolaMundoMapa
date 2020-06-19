@@ -5,6 +5,7 @@
   "description": "Application to store places",
   "author": "David Rojas <jossedaviid1@gmail.com>",
   "license": "MIT",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
