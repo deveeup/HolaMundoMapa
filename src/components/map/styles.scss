@@ -1,6 +1,6 @@
 @import '../../assets/styles/vars.scss';
 
-.MapContainer {
+.mapContainer {
   width: 100%;
   height: calc(100vh - 140px);
   overflow: hidden;
@@ -8,12 +8,12 @@
   padding: 0;
   position: relative;
 }
-.Map {
+.map {
   height: calc(100vh - 140px) !important;
   width: 100% !important;
 
 }
-.ModalContainer {
+.modalContainer {
   background-color: rgba($yellow, .5);
   position: absolute;
   z-index: 3;

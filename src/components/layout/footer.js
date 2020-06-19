@@ -1,17 +1,18 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { ES_TEXTS, EN_TEXTS } from '../../constants';
+import { PathRoutes, ES_TEXTS, EN_TEXTS } from '../../constants';
 const Footer = () => {
   const info = useSelector(state => state.user);
-
   const ES = ES_TEXTS;
   const EN = EN_TEXTS;
+
   return (
     <footer>
       <p>
-        {info.langEN ? EN.footerText : ES.footerText }
+        {info.langEN ? EN.footerText : ES.footerText}
         <a 
-          href="https://www.linkedin.com/in/deveeup/"
+          href={PathRoutes.LINKEDIN}
+          rel="noopener noreferrer" 
           target="_blank"
         >
           @davidrojas

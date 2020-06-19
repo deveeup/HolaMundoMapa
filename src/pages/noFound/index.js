@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../../components/layout';
-import Logo from '../../assets/img/notFound.gif';
+import NotFoundImg from '../../assets/img/notFound.gif';
 import { useSelector } from 'react-redux';
 import { PathRoutes, ES_TEXTS, EN_TEXTS } from '../../constants';
 import './styles.scss';
@@ -12,8 +12,8 @@ const NoFound = () => {
   const EN = EN_TEXTS;
   return (
     <Layout>
-      <div className="Container">
-        <img src={Logo} alt=""/>
+      <div className="containerNotFound">
+        <img src={NotFoundImg} alt={`${EN.alt} - NotFound`}/>
         <h1>
           {info.langEN ? EN.notFound : ES.notFound}
         </h1>

@@ -1,6 +1,6 @@
 @import '../../assets/styles/vars.scss';
 
-.container {
+.containerPlaces {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +34,11 @@
       margin-bottom: 20px;
       overflow-x: hidden;
       overflow-y: auto;
+      img {
+        width: 70%;
+        margin: auto;
+        max-width: 150px;
+      }
       p {
         text-align: center;
         padding: 0 20px;
@@ -64,14 +69,10 @@
       &::-webkit-scrollbar {
         width: 8px;
       }
-      
-      /* Track */
       &::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px gray;
         border-radius: 10px;
       }
-      
-      /* Handle */
       &::-webkit-scrollbar-thumb {
         background: $blue;
         border-radius: 10px;
@@ -97,6 +98,11 @@
         overflow-y: auto;
         margin-bottom: 0;
         height: 100%;
+        img {
+          width: 70%;
+          margin: auto;
+          max-width: 100px;
+        }
         span {
           background-color: $white;
           color: $blue;

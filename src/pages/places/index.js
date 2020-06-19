@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Layout from '../../components/layout';
 import RenderMap from '../../components/map';
 import icon from '../../assets/img/icon.svg';
+import discover from '../../assets/img/discover.png';
 import { ES_TEXTS, EN_TEXTS } from '../../constants';
 import './styles.scss';
 
@@ -22,17 +23,20 @@ const PlacesPage = () => {
 
   return (
     <Layout>
-      <div className="container">
-        <div className="container-list">
+      <div className="containerPlaces">
+        <div className="containerPlaces-list">
           <h1>
             {places.length !== 0 && <img src={icon} alt={`${EN.alt} - icono`}/>} 
             {places.length === 0 
               ? (info.langEN ? EN.dontPlaceTitle : ES.dontPlaceTitle) 
               : (info.langEN ? EN.placesTitle : ES.placesTitle)}
           </h1>
-          <div className="container-list-box">
+          <div className="containerPlaces-list-box">
             {places.length === 0 ? (
-              <p>{info.langEN ? EN.dontPlaceText : ES.dontPlaceText}</p>
+              <>
+                <img src={discover} alt={`${EN_TEXTS.alt} - No places`}/>
+                <p>{info.langEN ? EN.dontPlaceText : ES.dontPlaceText}</p>
+              </>
             ) : places.map(place => {
               return (
                 <span key={place.id} onClick={() => handlePlaces(place.lat, place.lng)}>
@@ -42,12 +46,12 @@ const PlacesPage = () => {
             })}
           </div>
         </div>
-        <div className="container-map">
+        <div className="containerPlaces-map">
           <RenderMap darkTheme={false} infoMap={infoMap} />
         </div>
       </div>
     </Layout>
   );
-}
+};
 
 export default PlacesPage;

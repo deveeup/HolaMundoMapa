@@ -13,9 +13,11 @@ const Header = () => {
     <header>
       <h1>{info.app}</h1>
       <span onClick={ () => setMenu(!menu) }>
-        { !menu ? (info.langEN ? EN.menu : ES.menu) : (info.langEN ? EN.close : ES.close)}
+        {!menu 
+          ? (info.langEN ? EN.menu : ES.menu) 
+          : (info.langEN ? EN.close : ES.close)}
       </span>
-      { menu &&<Menu /> }
+      {menu && <Menu />}
     </header>
   );
 };

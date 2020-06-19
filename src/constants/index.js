@@ -1,6 +1,7 @@
 export const PathRoutes = {
   MAIN: '/',
-  PLACES: '/places'
+  PLACES: '/places',
+  LINKEDIN: 'https://www.linkedin.com/in/deveeup/'
 };
 
 export const ES_TEXTS = {
@@ -8,7 +9,7 @@ export const ES_TEXTS = {
   close: 'Cerrar',
   home: 'Inicio',
   placesTitle: 'Lugares guardados',
-  changeLanguage: 'Cambiar idioma a',
+  changeLanguage: 'Cambiar idioma a inglés',
   footerText: 'Realizado por',
   dontPlaceTitle: 'No hay lugares guardados',
   dontPlaceText: 'Aún no has guardado algún lugar, puedes hacer clic en el mapa para marcar algún sitio',
@@ -26,7 +27,7 @@ export const EN_TEXTS = {
   close: 'Close',
   home: 'Home',
   placesTitle: 'Saved places',
-  changeLanguage: 'Change language to',
+  changeLanguage: 'Change language to spanish',
   footerText: 'Made by',
   dontPlaceTitle: 'There are no saved places',
   dontPlaceText: 'You havent saved any place yet, you can click on the map to mark a place',

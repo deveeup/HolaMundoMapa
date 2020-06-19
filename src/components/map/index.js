@@ -48,13 +48,13 @@ const RenderMap = props => {
 
   }
   return (
-    <div className="MapContainer">
+    <div className="mapContainer">
       {info.modal && <Modal currentPlace={currentPlace} />}
       <Map
         google={props.google}
         zoom={12}
         onClick={onClick}
-        className="Map"
+        className="map"
         initialCenter={{
           lat: info.home.lat,
           lng: info.home.lng

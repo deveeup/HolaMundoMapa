@@ -22,7 +22,7 @@ const Menu = () => {
   };
 
   return (
-    <div className="Menu">
+    <div className="menu">
       <ul>
         <li>
           <Link to ="/">{info.langEN ? EN.home : ES.home}</Link>
@@ -32,7 +32,7 @@ const Menu = () => {
         </li>
         <li>
           <span onClick={() => handleLanguage()}>
-            {info.langEN ? `${EN.changeLanguage} spanish` : `${ES.changeLanguage} inglés`}
+            {info.langEN ? EN.changeLanguage : ES.changeLanguage}
           </span>
         </li>
       </ul>

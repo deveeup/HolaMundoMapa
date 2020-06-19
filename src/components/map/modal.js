@@ -38,8 +38,8 @@ const Modal = ({ currentPlace }) => {
   };
   
   return (
-    <div className="ModalContainer">
-      <div className="ModalContainer-box">
+    <div className="modalContainer">
+      <div className="modalContainer-box">
         <p>{info.langEN ? EN.howNamePlace : ES.howNamePlace}</p>
         <input 
           type="text"
@@ -48,13 +48,13 @@ const Modal = ({ currentPlace }) => {
         />
         <div>
           <button 
-            className="ModalContainer-box-confirm"
+            className="modalContainer-box-confirm"
             onClick={addPlace}
           >
             {info.langEN ? EN.actionButton : ES.actionButton}
           </button>
           <button 
-            className="ModalContainer-box-cancel"
+            className="modalContainer-box-cancel"
             onClick={cancel}
           >
             {info.langEN ? EN.cancelButton : ES.cancelButton}
